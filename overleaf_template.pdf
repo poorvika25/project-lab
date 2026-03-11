@@ -1,0 +1,273 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{titlesec}
+
+\geometry{margin=1in}
+\onehalfspacing
+
+%---------------------------------
+% CHAPTER FORMAT
+%---------------------------------
+
+\titleformat{\chapter}[display]
+{\bfseries\fontsize{16pt}{18pt}\selectfont}
+{\chaptername\ \thechapter}
+{20pt}
+{\centering\bfseries\fontsize{18pt}{20pt}\selectfont\MakeUppercase}
+
+%---------------------------------
+% SECTION FORMAT
+%---------------------------------
+
+\titleformat{\section}
+{\bfseries\fontsize{16pt}{18pt}\selectfont}
+{\thesection}
+{1em}
+{}
+
+%---------------------------------
+% SUBSECTION FORMAT
+%---------------------------------
+
+\titleformat{\subsection}
+{\bfseries\fontsize{14pt}{16pt}\selectfont}
+{\thesubsection}
+{1em}
+{}
+
+\begin{document}
+
+%---------------------------------
+% ABSTRACT
+%---------------------------------
+
+\chapter*{\centering ABSTRACT}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+
+Yoga plays an important role in maintaining physical and mental well-being.
+However performing yoga poses incorrectly may lead to injuries. The proposed
+system "AsanaFix: AI Based Yoga Posture Assistant" uses computer vision and
+machine learning techniques to detect and correct yoga postures in real time.
+
+The system analyzes body key points and compares them with ideal yoga poses
+to provide feedback to users.
+
+\newpage
+
+%---------------------------------
+% TABLE OF CONTENTS
+%---------------------------------
+
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+\tableofcontents
+\newpage
+
+%---------------------------------
+% LIST OF FIGURES
+%---------------------------------
+
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\newpage
+
+%---------------------------------
+% LIST OF TABLES
+%---------------------------------
+
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\newpage
+
+%---------------------------------
+% LIST OF ABBREVIATIONS
+%---------------------------------
+
+\chapter*{List of Abbreviations}
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+
+AI – Artificial Intelligence
+
+CNN – Convolutional Neural Network
+
+ML – Machine Learning
+
+\newpage
+
+%---------------------------------
+% CHAPTER 1
+%---------------------------------
+
+\chapter{Introduction}
+
+\section{Introduction to the Project}
+
+Yoga is a physical, mental, and spiritual practice that originated in India.
+Maintaining correct posture during yoga practice is very important to gain
+maximum health benefits and avoid injuries.
+
+\section{Existing System}
+
+Traditional yoga training requires direct supervision from trained instructors.
+However, many beginners practice yoga without guidance which leads to incorrect
+postures.
+
+\section{Proposed System}
+
+The proposed system uses artificial intelligence and computer vision techniques
+to analyze the user's body posture and provide feedback in real time.
+
+\section{Scope of the Project}
+
+The system helps beginners practice yoga safely by detecting posture errors
+and suggesting corrections.
+
+\section{Objectives of the Project}
+
+The main objective of this project is to design an AI-based yoga posture
+assistant that helps users perform yoga poses correctly.
+
+\section{Organization of the Report}
+
+This report is organized into different chapters describing system analysis,
+design, implementation, results, and conclusions.
+
+%---------------------------------
+% CHAPTER 2
+%---------------------------------
+
+\chapter{Literature Survey}
+
+\section{Summary of Literature Survey}
+
+Many researchers have explored computer vision techniques for posture
+recognition. Deep learning and pose estimation models such as OpenPose
+and MediaPipe are widely used.
+
+%---------------------------------
+% CHAPTER 3
+%---------------------------------
+
+\chapter{Analysis and Requirement Specification}
+
+\section{Introduction}
+
+System analysis helps identify requirements for the proposed system.
+
+\section{Existing System}
+
+Existing yoga training systems depend on human instructors.
+
+\section{Non-Functional Requirements}
+
+System performance, usability, reliability, and scalability are important
+requirements.
+
+\section{User Interface Requirements}
+
+The system should provide a simple and user-friendly interface.
+
+\section{Software Requirements}
+
+Python, OpenCV, and machine learning libraries are used.
+
+\section{Hardware Requirements}
+
+Camera-enabled device, computer system, and GPU support.
+
+%---------------------------------
+% CHAPTER 4
+%---------------------------------
+
+\chapter{System Design}
+
+\section{Introduction}
+
+System design describes the architecture and components of the proposed system.
+
+\section{Overview of the Proposed System}
+
+The system captures user posture using a camera and processes the image
+through an AI model.
+
+\section{Block Diagram}
+
+The block diagram shows the flow from image capture to pose detection
+and feedback generation.
+
+%---------------------------------
+% CHAPTER 5
+%---------------------------------
+
+\chapter{System Implementation}
+
+\section{Introduction}
+
+Implementation describes the development process of the system.
+
+\section{Comparative Analysis of Model Accuracy}
+
+Different models were evaluated for posture detection accuracy.
+
+\subsection{Algorithm Used}
+
+Pose estimation algorithms are used to detect body keypoints.
+
+\section{Implementation}
+
+The system was implemented using Python and computer vision libraries.
+
+\subsection{About Dataset}
+
+The dataset consists of images of different yoga poses.
+
+\subsection{Workflow}
+
+The workflow includes image capture, pose detection, comparison,
+and feedback generation.
+
+%---------------------------------
+% CHAPTER 6
+%---------------------------------
+
+\chapter{Results and Discussions}
+
+\section{Experimental Results}
+
+Experimental results show that the system accurately detects
+yoga postures and provides corrective feedback.
+
+%---------------------------------
+% CHAPTER 7
+%---------------------------------
+
+\chapter{Conclusion and Scope for Future Enhancement}
+
+\section{Conclusion}
+
+The AI-based yoga posture assistant helps users perform yoga poses
+correctly and safely.
+
+\section{Scope for Future Advancement}
+
+Future work includes improving accuracy and supporting more yoga poses.
+
+%---------------------------------
+% REFERENCES
+%---------------------------------
+
+\addcontentsline{toc}{chapter}{REFERENCES}
+
+\begin{thebibliography}{9}
+
+\bibitem{paper1}
+AI Based Yoga Pose Detection.
+
+\bibitem{paper2}
+Human Pose Estimation using Computer Vision.
+
+\end{thebibliography}
+
+\end{document}
